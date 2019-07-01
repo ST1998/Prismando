@@ -2,4 +2,4 @@
 
 Descrizione in costruzione...
 
-https://st1998.github.io/Prismando/#telegram
+https://st1998.github.io/Prismando/
