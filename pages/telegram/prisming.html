@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Prismando Mesh">
+	<meta name="keywords" content="telegram, discord, chat, italian, english" />
+
+	<title>Prismesh - Prismando + Prismino</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+	<style>
+html,
+body {
+	height: 100%;
+	font-family: Verdana, Geneva, sans-serif; }
+
+body {
+	padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	background-image: url('img/watermark.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; }
+
+a, a:active, a:focus {
+	outline: none; }
+
+.page-header {
+	color: #A94442; }
+
+a {
+	color: #A94442; }
+
+a:hover, a:active {
+	color: #401A1A; }
+
+a:hover, a:visited, a:link, a:active {
+	text-decoration: none; }
+
+hr {
+	visibility: hidden; }
+
+/* Home Page Carousel */
+
+header.carousel {
+	height: 30vw;
+	min-height: 50%; }
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+	height: 100%; }
+
+header.carousel .fill {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	image-rendering: pixelated; }
+
+/* Panel Styles */
+
+.panel {
+	background:rgba(255,255,255,0); }
+
+.panel-default > .panel-heading {
+	background:rgba(136,0,0,0.75);
+	color: #ffffff; }
+
+.panel-default > .panel-body {
+	background:rgba(255,255,255,0.75); }
+
+.modal-header {
+	background: #880000;
+	color: #ffffff; }
+
+.modal-header > .close {
+	color: #ffffff;
+	opacity: 1; }
+
+/* Header Styles */
+
+.navbar-default {
+	background-color: #880000;
+	border-color: #660000; }
+
+.navbar-default .navbar-brand {
+	color: #ffffff; }
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #ee0000; }
+
+.navbar-default .navbar-text {
+	color: #ffffff; }
+
+.navbar-default .navbar-nav > li > a {
+	color: #ffffff; }
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #ee0000; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #ee0000;
+	background-color: #660000; }
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	color: #ee0000;
+	background-color: #660000; }
+
+.navbar-default .navbar-toggle {
+	border-color: #660000; }
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #660000; }
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #ffffff; }
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: #ffffff; }
+
+.navbar-default .navbar-link {
+	color: #ffffff; }
+
+.navbar-default .navbar-link:hover {
+	color: #ee0000; }
+
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: #ffffff; }
+		
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #ee0000; }
+		
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+		color: #ee0000;
+		background-color: #660000; } }
+
+/* Footer Styles */
+
+.footer-in {
+	margin: 15px 0;
+	color: #ffffff; }
+
+.footer-in a {
+	color: #ffffff; }
+
+.footer-in a:hover {
+	color: #ee0000; }
+
+.footer-red {
+	background-color: #880000; }
+
+/* Button Styles */
+
+.btn-green {
+	color: white !important;
+	background: #7CBB00;
+	border-color: #7CBB00; }
+
+.btn-green:hover {
+	color: white !important;
+	background: #6ba200;
+	border-color: #6ba200; }
+
+.btn-yellow {
+	color: white !important;
+	background: #FFBB00;
+	border-color: #FFBB00; }
+
+.btn-yellow:hover {
+	color: white !important;
+	background: #e6a800;
+	border-color: #e6a800; }
+
+.btn-red {
+	color: white !important;
+	background: #F65314;
+	border-color: #F65314; }
+
+.btn-red:hover {
+	color: white !important;
+	background: #e84709;
+	border-color: #e84709; }
+
+.btn-blue {
+	color: white !important;
+	background: #00A1F1;
+	border-color: #00A1F1; }
+
+.btn-blue:hover {
+	color: white !important;
+	background: #0090d8;
+	border-color: #0090d8; }
+
+.btn-prismando {
+	color: white !important;
+	background: #880000;
+	border-color: #880000; }
+
+.btn-prismando:hover {
+	color: white !important;
+	background: #6f0000;
+	border-color: #6f0000; }
+
+/* Random Stuff */
+
+.alphabox {
+	background:rgba(0,0,0,0.2); }
+
+.invisiwidth {
+	width: 100%; }
+
+.img-fill {
+	width: 100%; }
+
+.hovertext:after {
+	content:attr(name);
+	position:absolute;
+	white-space: nowrap;
+	top:30px;
+	padding:0.5em 20px;
+	font-weight: bold;
+	background:rgba(136,0,0,0.5);
+	text-decoration:none;
+	color:#fff; }
+
+.hovertext-random:after {
+	font-size: 70%;
+	content:attr(name);
+	position:absolute;
+	white-space: nowrap;
+	top:30px;
+	padding:0.5em 10px;
+	font-weight: bold;
+	background:rgba(136,0,0,0.5);
+	text-decoration:none;
+	color:#fff; }
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+	.customer-img,
+	.img-related {
+		margin-bottom: 30px; } }
+
+@media(max-width:767px) {
+	.img-portfolio {
+		margin-bottom: 15px; }
+
+	header.carousel .carousel {
+		height: 70%; } }
+	</style>
+
+<link rel="shortcut icon" href="favicon16.ico">
+
+</head><body id="home">
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand smoothscroll" href="/Prismesh"><b>Prismando Mesh<font size="1"> v0.2</font></b></a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="https://t.me/PrismComplete" target="_blank">Telegram</a></li>
+					<li><a href="https://discord.gg/PsfBqNb" target="_blank">Discord</a></li>
+					<li><a href="/Prismesh/#comments">Commenti</a></li>
+					<li><a href="/Prismesh/pages/news.html">Notizie</a></li>
+					<li><a href="/Prismesh/pages/changelogs.html">Changelog</a></li>
+					<li><a href="/Prismesh/pages/faq.html" target="_blank">FAQ</a></li>
+					<li><a href="https://www.paypal.me/Steveno98">Dona</a></li>
+					<li><a href="https://stegon.blogspot.it" target="_blank">Stegon's Ownpage</a></li>
+				</ul>
+			</div></div></nav>
+
+	<!-- Page Content -->
+	<div class="container">
+		<hr>
+		<!-- Info Section -->
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4><i class="fa fa-info-circle"></i> Enter</h4>
+					</div>
+					<div class="panel-body">
+						<p><center><img style='height: 100%; width: 100%; object-fit: contain' src="https://telegra.ph/file/0a8a88d37291256119cfe.png" /><br><br><a href="https://t.me/joinchat/ErOQjE72gL6P5x_AkeAYmQ"><b>-> Enter on PRISMING <-</b></a><br>
+						<i>PRISMING was born to bring people together, discussing in general, and we respect our freedoms.</i><br><br></center></p></div></div>
+				
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4><i class="fa fa-info-circle"></i> Vantages</h4>
+						</div>
+						<div class="panel-body">
+							<p><center><b>For each age group 🔹 We respect each other 🔹 In continuous development 🔹 Carefully checked 🔹 Trustworthy operators, open in discussion 🔹 While speaking in general, there is a specific topic that can bring us together.</b><br><br></div></div>
+				
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4><i class="fa fa-info-circle"></i> Rules</h4></div>
+						<div class="panel-body">
+							<p><center>
+							
+							<b>( 1 )</b> No pornography, gore, vore, scat and blasphemy. Allowed censorship of them.<br><br>
+							<b>( 2 )</b> Spam only with permission staffer: No group, channel, site on porn, gore, slags, blasphemies.<br><br>
+							<b>( 3 )</b> Do not contact a user without his/her permission, unless it is for "real" emergency or contact a staffer.<br><br>
+							<b>( 4 )</b> You respect, respecting everyone's freedom and his/her moral choices. Irony, parody and/or satire are allowed, that are not intrusive and/or too heavy to create a strong embarrassment, the same for the bad words. Black humor is forbidden.<br><br>
+							<b>( 5 )</b> No abuse of posts, images, audio, stickers, links, etc. per second (es. 10 posts/sec). It is not a race.<br><br>
+							<b>( 6 )</b> Do not create discussions that are an end in themselves and that offer no hint of interest on which you can discuss and discuss and respond with education.<br><br>
+							<b>( 7 )</b> Any problem, write and send with the @admin command to call a staffer. No false alarms, thanks.
+							
+							</center><br><br><b><i>Last update: July 2, 2019</i></b></p></div></div></div></div></div>
+					
+		<hr></div>
+	
+	<!-- Footer -->
+	<div class="footer-red">
+		<div class="container">
+			<div class="row footer-in">
+				<div class="col-lg-12">
+					<p><b>Questo sito è stato creato da Stegon nel 2019! - <a href="https://github.com/ST1998/Prismesh">GitHub</a></b></p></div></div></div></div>
+
+	<!-- jQuery and Bootstrap Core JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+
+</body></html>
