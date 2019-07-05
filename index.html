@@ -1,3 +1,5 @@
 RewriteEngine on
+RewriteCond %{HTTP:Accept-Language} (it) [NC]
+RewriteRule .* /Prismesh/it/ [L]
 RewriteCond %{HTTP:Accept-Language} (en) [NC]
-RewriteRule .* https://st1998.github.io/Prismesh/en/ [L]
+RewriteRule .* /Prismesh/en [L]
