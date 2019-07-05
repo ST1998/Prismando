@@ -1,7 +1,9 @@
-<html>
-RewriteEngine on
-RewriteCond %{HTTP:Accept-Language} (it) [NC]
-RewriteRule .* /Prismesh/it/ [L]
-RewriteCond %{HTTP:Accept-Language} (en) [NC]
-RewriteRule .* /Prismesh/en/ [L]
-</html>
+<script>
+var language = window.navigator.language;
+  
+if(language == "it"){
+window.location.href = "/Prismesh/it/"; }
+
+else if(language == "en"){
+window.location.href = "/Prismesh/en/"; }       
+</script>
