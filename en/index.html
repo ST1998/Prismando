@@ -1,267 +1,97 @@
-<!DOCTYPE html><html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="Prismando Mesh">
-	<meta name="keywords" content="telegram, discord, chat, italian, english" />
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><meta name="author" content="Prismando Mesh"><meta name="keywords" content="telegram, discord, chat, italian, english" /><title>Prismesh</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
 
-	<title>Prismesh</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-
-<style>
-html,
-body {
-	height: 100%;
-	font-family: Verdana, Geneva, sans-serif; }
-
-body {
-	padding-top: 50px;
-	background-image: url('img/watermark.png');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center; }
-
-a, a:active, a:focus {
-	outline: none; }
-
-.page-header {
-	color: #3498db; }
-
-a {
-	color: #3498db; }
-
-a:hover, a:active {
-	color: #34495e; }
-
-a:hover, a:visited, a:link, a:active {
-	text-decoration: none; }
-
-hr {
-	visibility: hidden; }
-
-.panel {
-	background:rgba(255,255,255,0); }
-
-.panel-default > .panel-heading {
-	background: #3498db;
-	color: #ffffff; }
-
-.panel-default > .panel-body {
-	background:rgba(255,255,255,0.75); }
-
-.modal-header {
-	background: #880000;
-	color: #ffffff; }
-
-.modal-header > .close {
-	color: #ffffff;
-	opacity: 1; }
-
-.footer-in {
-	margin: 15px 0;
-	color: #ffffff; }
-
-.footer-in a {
-	color: #ffffff; }
-
-.footer-in a:hover {
-	color: #95a5a6; }
-
-.footer-red {
-	background-color: #2980b9; }
-
-.alphabox {
-	background:rgba(0,0,0,0.2); }
-
-.invisiwidth {
-	width: 100%; }
-
-.img-fill {
-	width: 100%; }
-
-.hovertext:after {
-	content:attr(name);
-	position:absolute;
-	white-space: nowrap;
-	top:30px;
-	padding:0.5em 20px;
-	font-weight: bold;
-	background:rgba(136,0,0,0.5);
-	text-decoration:none;
-	color:#fff; }
-
-.hovertext-random:after {
-	font-size: 70%;
-	content:attr(name);
-	position:absolute;
-	white-space: nowrap;
-	top:30px;
-	padding:0.5em 10px;
-	font-weight: bold;
-	background:rgba(136,0,0,0.5);
-	text-decoration:none;
-	color:#fff; }
-	
-.fixed-nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  width: 100%;
-  height: 50px;
-  background-color: #2980b9; }
-
-ul {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; }
-
-li {
-  float: left; }
-
-.content {
-  margin-top: 20px; }
-
-.fixed-nav-bar li, .fixed-nav-bar a { 
-  height: 50px;
-  line-height: 50px; }
-
-.menu {
-  width: 100%;
-  max-width: 1500px; }
-
-.menu a, .menu a:visited {
-  color: #ffffff; }
-
-.menu a:hover, .menu a:target {
-  color: #ebebeb; }
-
-.menu-items {
-  display: inline-block; }
-
-.sitename {
-  display: inline-block;
-  margin-right: 20px;
-  margin-left: 10px; }
-
-.menu-items li {
-  display: inline-block;
-  margin-right: 10px;
-  margin-left: 10px; }
-
-.menu-items a {
-  text-decoration: none; }
-
-.show, .hide {
-  display: none;
-  padding-left: 15px;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center left;
-  color: #dde1e2; }
-
+<style>html, body { height: 100%; font-family: Times, Verdana, Geneva, sans-serif; }
+a, a:active, a:focus { outline: none; }
+.page-header { color: #3498db; }
+a { color: #3498db; }
+a:hover, a:active { color: #34495e; }
+a:hover, a:visited, a:link, a:active { text-decoration: none; }
+.panel { background:rgba(255,255,255,0); }
+.panel-default > .panel-heading { background: #2980b9; color: #ffffff; }
+.panel-default > .panel-body { background:rgba(255,255,255,0.75); }
+.modal-header { background: #880000; color: #ffffff; }
+.modal-header > .close { color: #ffffff; opacity: 1; }
+.footer-in { margin: 10px 0; color: #ffffff; }
+.footer-in a { color: #ffffff; }
+.footer-in a:hover { color: #ee0000; }
+.footer-red { background-color: #2980b9; }
+.footer { position: fixed; left: 0; bottom: 0; width: 100%; background-color: #3498db; }
+.footer2 { position: fixed; left: 0; bottom: 100; width: 100%; background-color: #3498db; }
+html{ scroll-behavior: smooth; }
+.fixed-nav-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; width: 100%; height: 50px; background-color: #2980b9; }
+ul { position: -webkit-sticky; position: sticky; top: 0; list-style-type: none; margin: 0; padding: 0; overflow: hidden; }
+li { float: left; }
+.content { margin-top: 20px; }
+.fixed-nav-bar li, .fixed-nav-bar a { height: 50px; line-height: 50px; }
+.menu { width: 100%; max-width: 1500px; }
+.menu a, .menu a:visited { color: #ffffff; }
+.menu a:hover, .menu a:target { color: #ebebeb; }
+.menu-items { display: inline-block; }
+.sitename { display: inline-block; margin-right: 20px; margin-left: 10px; }
+.menu-items li { display: inline-block; margin-right: 10px; margin-left: 10px; }
+.menu-items a { text-decoration: none; }
+.show, .hide { display: none; padding-left: 15px; background-color: transparent; background-repeat: no-repeat; background-position: center left; color: #dde1e2; }
 .show { background-image: url(); }
 .hide { background-image: url(); }
+@media only screen and (max-width: 1500px) { .menu {  position: relative; width: 100%; }
+.sitename { position: absolute; top: 0; left: 8px; margin-left: 0px; }
+.menu-items { display: none;  width: 100%; margin-top: 50px; background-color: #3498db; }
+.menu-items li { display: block; text-align: center; }
+.show, .hide { position: absolute; top: 0; right: 8px; }
+.show { display: inline-block; }
+.hide { display: none; }
+#menu:target .show { display: none; }
+#menu:target .hide, #menu:target .menu-items { display: inline-block; } }
+@media only screen and (max-width: 220px) { .sitename, .show, .hide { font-size: 12px; } }
+html{ scroll-behavior: smooth; }
+body{ margin: 0; padding: 0; }
+.gotopbtn{
+position: fixed;
+width: 50px;
+height: 50px;
+background: #3498db;
+bottom: 32px;
+right: 32px;
+text-align: center;
+line-height: 50px;
+color: white;
+font-size: 22px; }</style>
 
-@media only screen and (max-width: 1500px) {
-  .menu { 
-    position: relative;
-    width: 100%; }
+<script>var disqus_config = function (){ this.page.url = "https://st1998.github.io/Prismando/"; this.page.identifier = "INDEX"; }; (function(){ var d = document, s = d.createElement('script'); s.src = '//prismando.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })();</script>
 
-  .sitename {
-    position: absolute;
-    top: 0;
-    left: 8px;
-    margin-left: 0px; }
-
-  .menu-items {
-    display: none; 
-    width: 100%;
-    margin-top: 50px;
-    background-color: #3498db; }
-
-  .menu-items li {
-    display: block;
-    text-align: center; }
-  
-  .show, .hide {  
-    position: absolute;
-    top: 0;
-    right: 8px; }
-
-  .show {
-    display: inline-block; }
-
-  .hide {
-    display: none; }
-
-  #menu:target .show {
-    display: none; }
-
-  #menu:target .hide, #menu:target .menu-items {
-    display: inline-block; } }
-
-@media only screen and (max-width: 220px) {
-  .sitename, .show, .hide {
-    font-size: 12px; } }</style>
-
-<link rel="shortcut icon" href="/Prismesh/favicon16.ico">
-
-</head><body id="home">
-
-	<nav class='fixed-nav-bar'><div class='menu' id='menu'>
-		<a class='sitename' href='/Prismesh/en'><b>⧩ Prismesh<font size="1"> v0.4.2</font></b></a>
-
-		<b><a class='show' href='#menu'>[ ☰ ]</a><a class='hide' href='#'>[ ☰ ]</a>
-			<ul class='menu-items'>
-				<li><a href="/Prismesh/en/socials.html#telegram">Telegram</a></li>
-				<li><a href="/Prismesh/en/socials.html#discord">Discord</a></li>
-				<li><a href="/Prismesh/en/updates.html">Updates</a></li>
-				<li><a href="/Prismesh/en/topapps.html">Top Apps</a></li>
-				<li><a href="/Prismesh/en/improveyrself.html">Improve yrself</a></li>
-				<li><a href="/Prismesh/en/faq.html">FAQ</a></li>
-				<li><a href="/Prismesh/en/contact.html">Contact</a></li>
-			</ul></div></nav></b>
-    
-	<div class="container"><br><div class="row"><div class="col-xs-12">
+<center><link rel="shortcut icon" href="/Prismesh/p.ico"></head><body id="home">
+<nav class='fixed-nav-bar'><div class='menu' id='menu'>
+<a class='sitename' href='/Prismesh/en'><b>⧩ Prismesh<font size="1"> v0.5.3</font></b></a>
+<b><a class='show' href='#menu'>[ ☰ ]</a><a class='hide' href='#'>[ ☰ ]</a><ul class='menu-items'>
+<li><a href="/Prismesh/en/socials.html#telegram">Telegram</a></li>
+<li><a href="/Prismesh/en/socials.html#discord">Discord</a></li>
+<li><a href="/Prismesh/en/topapps.html">Top Apps</a></li>
+<li><a href="/Prismesh/en/improveyrself.html">Improve yrself</a></li>
+<li><a href="/Prismesh/en/updates.html">Updates</a></li>
+<li><a href="/Prismesh/en/faq.html">FAQs</a></li>
+<li><a href="https://st1998.github.io/BdS/en/">StegonQotD</a></li>
+</ul></div></nav></b><br><br><div class="container"><br><div class="row"><div class="col-xs-12">
 				
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						</i><b><center>Welcome on Prismesh!<br><br>Initially,  it had to be called Prismando Network and to not be trivial, I chose Prismesh, for two reasons: The word Mesh (Network mesh), clear reference to the union of small computer networks in a large and the union between Prism and Mesh. <br> <br> It will be constantly updated and being open-source, anyone can point out some details that I missed. <br> <br> Have a nice surfing! :D</center></b></div></div></div></div>
-				
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4>v0.4.2 | July 23 | 01:57</h4></div>
-					<div class="panel-body">
-						<center>* Little revision and great lightening in the code.<br><br>* Changed the color of the site from red to azure.<br> <br>* Removed the Prismesh written on each page visited.</center></div></div>
+<div class="panel panel-default"><div class="panel-heading">
+</i><b>Welcome to Prismesh, the official Prismando website!<br><br>Initially, it had to be Prismando Network and in order not to be trivial, I chose Prismesh, for two reasons: The word Mesh, reference to the union of small computer networks in a large one and the union between Prism and Mesh.<br><br>To start browsing, press the [ ☰ ] icon on the top right to open the nav menu.<br><br>Happy surfing! :D</b></div></div></div></div>
+
+<div class="panel panel-default"><div class="panel-heading">v0.5.3 | Jan. 20, '20</div><div class="panel-body">
+* The English version of Prismesh has been updated, but partially translated.<br>
+* The welcome message on the Home page has been changed<br><br><a href="/Prismesh/en/updates.html#changelogs"><font size="5"><b>> Previous changelogs <</b></font></a></div></div>
 								
-				<p id="comments">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4><i class="fa fa-comment"></i> Comments</h4>
-					</div><div class="panel-body">
-						<div id="disqus_thread" class="col-lg-12"></div></div></div></div></div>
-	
-	<div class="footer-red">
-		<div class="container">
-			<div class="row footer-in">
-					<center><b>From creator of <a href="https://stegon.blogspot.it" target="_blank">Stegon's Ownpage</a> | 2019 | <a href="https://github.com/ST1998/Prismesh">GitHub</a> | <a href="https://i.imgur.com/3uSEw9G.png">1st Year of Prismando</a> | <a href="https://st1998.github.io/Prismesh/it/">🇮🇹 ITALIANO</a><br><br><a href="https://www.paypal.me/Steveno98">> DONATE (via PayPal) <</a></b></center></div></div></div>
+<p id="comments"><div class="panel panel-default"><div class="panel-heading">Comments</div><div class="panel-body"><div id="disqus_thread" class="col-lg-12"></div></div></div>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<p id="contact"><div class="panel panel-default"><div class="panel-heading">Contact</div><div class="panel-body">
+<b>👑 Fondator</b> | 💎 <b>Admin</b> | <b>🤖 Bot</b><br><br>
+						
+<font size="5"><a href="https://t.me/Stegon98"><b>> 👑 Stegon <️</b></a><br><br>
+<a href="https://t.me/Loris239"><b>> 💎 Loris <️</b></a><br><br>
+<a href="https://t.me/Kirbypuffball"><b>>️  💎 20XX Kirby <</b></a><br><br>
+<a href="https://t.me/PrismContactBot"><b>> 🤖 PrismBot <️</b></a><br><br>
+<a href="https://t.me/StegonContactBot"><b>> 🤖 StegonBot <️</b></a></font><br><br>
+
+The staff controls who can be valid to administer, with staff meeting. To be, respect the rules and be active often. If you want to be, contact the staff, explaining why you want to get involved. If you are unable to join the group, contact the staff. Is your account limited (see on <a href="https://t.me/SpamBot"><b>SpamBot</b></a>)? Use <a href="https://t.me/PrismContactBot"><b>PrismContactBot</b></a> or <a href="https://t.me/StegonContactBot"><b>StegonContactBot</b></a>.</p></div></div></div></div></div>
 	
-	<script>var disqus_config = function (){
-		this.page.url = "https://st1998.github.io/Prisming/";
-		this.page.identifier = "INDEX"; };
-	(function(){
-		var d = document, s = d.createElement('script');
-		s.src = '//prismando.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s); })();</script></body></html>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"><a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+	
+<div class="footer-red"><div class="container"><div class="row footer-in"><b>From creator of <a href="https://stegon.blogspot.com" target="_blank">Stegon's Ownpage</a> | 2019-2020 | <a href="https://i.imgur.com/3uSEw9G.png">1st year of Prismando</a> | <a href="https://st1998.github.io/Prismesh/it/">🇮🇹 ITA</a><br><br><a href="https://www.paypal.me/Steveno98">> DONATE <</a></b></center></div></div></div></body></html>

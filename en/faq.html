@@ -1,450 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
-	
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="Prismando Mesh">
-	<meta name="keywords" content="telegram, discord, chat, italian, english" />
-
-	<title>Prismesh - FAQ</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-
-	<style>
-html,
-body {
-	height: 100%;
-	font-family: Verdana, Geneva, sans-serif; }
-
-body {
-	padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-	background-image: url('img/watermark.png');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center; }
-
-a, a:active, a:focus {
-	outline: none; }
-
-.page-header {
-	color: #A94442; }
-
-a {
-	color: #A94442; }
-
-a:hover, a:active {
-	color: #401A1A; }
-
-a:hover, a:visited, a:link, a:active {
-	text-decoration: none; }
-
-hr {
-	visibility: hidden; }
-
-/* Home Page Carousel */
-
-header.carousel {
-	height: 30vw;
-	min-height: 50%; }
-
-header.carousel .item,
-header.carousel .item.active,
-header.carousel .carousel-inner {
-	height: 100%; }
-
-header.carousel .fill {
-	width: 100%;
-	height: 100%;
-	background-position: center;
-	background-size: cover;
-	image-rendering: pixelated; }
-
-/* Panel Styles */
-
-.panel {
-	background:rgba(255,255,255,0); }
-
-.panel-default > .panel-heading {
-	background:rgba(136,0,0,0.75);
-	color: #ffffff; }
-
-.panel-default > .panel-body {
-	background:rgba(255,255,255,0.75); }
-
-.modal-header {
-	background: #880000;
-	color: #ffffff; }
-
-.modal-header > .close {
-	color: #ffffff;
-	opacity: 1; }
-
-/* Header Styles */
-
-.navbar-default {
-	background-color: #880000;
-	border-color: #660000; }
-
-.navbar-default .navbar-brand {
-	color: #ffffff; }
-
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-	color: #ee0000; }
-
-.navbar-default .navbar-text {
-	color: #ffffff; }
-
-.navbar-default .navbar-nav > li > a {
-	color: #ffffff; }
-
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-	color: #ee0000; }
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #ee0000;
-	background-color: #660000; }
-
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-	color: #ee0000;
-	background-color: #660000; }
-
-.navbar-default .navbar-toggle {
-	border-color: #660000; }
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #660000; }
-
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: #ffffff; }
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-	border-color: #ffffff; }
-
-.navbar-default .navbar-link {
-	color: #ffffff; }
-
-.navbar-default .navbar-link:hover {
-	color: #ee0000; }
-
-@media (max-width: 767px) {
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-		color: #ffffff; }
-		
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-		color: #ee0000; }
-		
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-		color: #ee0000;
-		background-color: #660000; } }
-
-/* Footer Styles */
-
-.footer-in {
-	margin: 15px 0;
-	color: #ffffff; }
-
-.footer-in a {
-	color: #ffffff; }
-
-.footer-in a:hover {
-	color: #ee0000; }
-
-.footer-red {
-	background-color: #880000; }
-
-/* Button Styles */
-
-.btn-green {
-	color: white !important;
-	background: #7CBB00;
-	border-color: #7CBB00; }
-
-.btn-green:hover {
-	color: white !important;
-	background: #6ba200;
-	border-color: #6ba200; }
-
-.btn-yellow {
-	color: white !important;
-	background: #FFBB00;
-	border-color: #FFBB00; }
-
-.btn-yellow:hover {
-	color: white !important;
-	background: #e6a800;
-	border-color: #e6a800; }
-
-.btn-red {
-	color: white !important;
-	background: #F65314;
-	border-color: #F65314; }
-
-.btn-red:hover {
-	color: white !important;
-	background: #e84709;
-	border-color: #e84709; }
-
-.btn-blue {
-	color: white !important;
-	background: #00A1F1;
-	border-color: #00A1F1; }
-
-.btn-blue:hover {
-	color: white !important;
-	background: #0090d8;
-	border-color: #0090d8; }
-
-.btn-prismando {
-	color: white !important;
-	background: #880000;
-	border-color: #880000; }
-
-.btn-prismando:hover {
-	color: white !important;
-	background: #6f0000;
-	border-color: #6f0000; }
-
-/* Random Stuff */
-
-.alphabox {
-	background:rgba(0,0,0,0.2); }
-
-.invisiwidth {
-	width: 100%; }
-
-.img-fill {
-	width: 100%; }
-
-.hovertext:after {
-	content:attr(name);
-	position:absolute;
-	white-space: nowrap;
-	top:30px;
-	padding:0.5em 20px;
-	font-weight: bold;
-	background:rgba(136,0,0,0.5);
-	text-decoration:none;
-	color:#fff; }
-
-.hovertext-random:after {
-	font-size: 70%;
-	content:attr(name);
-	position:absolute;
-	white-space: nowrap;
-	top:30px;
-	padding:0.5em 10px;
-	font-weight: bold;
-	background:rgba(136,0,0,0.5);
-	text-decoration:none;
-	color:#fff; }
-
-/* Responsive Styles */
-
-@media(max-width:991px) {
-	.customer-img,
-	.img-related {
-		margin-bottom: 30px; } }
-
-@media(max-width:767px) {
-	.img-portfolio {
-		margin-bottom: 15px; }
-
-	header.carousel .carousel {
-		height: 70%; } }
-	</style>
-
-<link rel="shortcut icon" href="/Prismesh/favicon16.ico">
-
-</head><body id="home">
-
-	<!-- Navigation -->
-	<nav class='fixed-nav-bar'><div class='menu' id='menu'>
-		<a class='sitename' href='/Prismesh/en'><b>⧩ Prismesh<font size="1"> v0.3.6</font></b></a>
-
-		<b><a class='show' href='#menu'>[ ☰ ]</a><a class='hide' href='#'>[ ☰ ]</a>
-			<ul class='menu-items'>
-				<li><a href="/Prismesh/en/socials.html#telegram">Telegram</a></li>
-				<li><a href="/Prismesh/en/socials.html#discord">Discord</a></li>
-				<li><a href="/Prismesh/en/#comments">Comments</a></li>
-				<li><a href="/Prismesh/en/updates.html">Updates</a></li>
-				<li><a href="/Prismesh/en/topapps.html">Top Apps</a></li>
-				<li><a href="/Prismesh/en/improveyrself.html">Improve yrself</a></li>
-				<li><a href="/Prismesh/en/contact.html">Contact</a></li>
-				<li><a href="https://www.paypal.me/Steveno98">Donate</a></li>
-			</ul></div></nav></b>
-
-<style>
-.fixed-nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  width: 100%;
-  height: 50px;
-  background-color: #6f0000; }
-
-ul {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; }
-
-li {
-  float: left; }
-
-.content {
-  margin-top: 20px; }
-
-.fixed-nav-bar li, .fixed-nav-bar a { 
-  height: 50px;
-  line-height: 50px; }
-
-.menu {
-  width: 100%;
-  max-width: 1500px; }
-
-.menu a, .menu a:visited {
-  color: #ffffff; }
-
-.menu a:hover, .menu a:target {
-  color: #ebebeb; }
-
-.menu-items {
-  display: inline-block; }
-
-.sitename {
-  display: inline-block;
-  margin-right: 20px;
-  margin-left: 10px; }
-
-.menu-items li {
-  display: inline-block;
-  margin-right: 10px;
-  margin-left: 10px; }
-
-.menu-items a {
-  text-decoration: none; }
-
-.show, .hide {
-  display: none;
-  padding-left: 15px;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center left;
-  color: #dde1e2; }
-
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><meta name="author" content="Prismando Mesh"><meta name="keywords" content="telegram, discord, chat, italian, english" /><title>FAQs</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+
+<style>html, body { height: 100%; font-family: Times, Verdana, Geneva, sans-serif; }
+a, a:active, a:focus { outline: none; }
+.page-header { color: #3498db; }
+a { color: #3498db; }
+a:hover, a:active { color: #34495e; }
+a:hover, a:visited, a:link, a:active { text-decoration: none; }
+.panel { background:rgba(255,255,255,0); }
+.panel-default > .panel-heading { background: #2980b9; color: #ffffff; }
+.panel-default > .panel-body { background:rgba(255,255,255,0.75); }
+.modal-header { background: #880000; color: #ffffff; }
+.modal-header > .close { color: #ffffff; opacity: 1; }
+.footer-in { margin: 10px 0; color: #ffffff; }
+.footer-in a { color: #ffffff; }
+.footer-in a:hover { color: #ee0000; }
+.footer-red { background-color: #2980b9; }
+.footer { position: fixed; left: 0; bottom: 0; width: 100%; background-color: #3498db; }
+.footer2 { position: fixed; left: 0; bottom: 100; width: 100%; background-color: #3498db; }
+html{ scroll-behavior: smooth; }
+.fixed-nav-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; width: 100%; height: 50px; background-color: #2980b9; }
+ul { position: -webkit-sticky; position: sticky; top: 0; list-style-type: none; margin: 0; padding: 0; overflow: hidden; }
+li { float: left; }
+.content { margin-top: 20px; }
+.fixed-nav-bar li, .fixed-nav-bar a { height: 50px; line-height: 50px; }
+.menu { width: 100%; max-width: 1500px; }
+.menu a, .menu a:visited { color: #ffffff; }
+.menu a:hover, .menu a:target { color: #ebebeb; }
+.menu-items { display: inline-block; }
+.sitename { display: inline-block; margin-right: 20px; margin-left: 10px; }
+.menu-items li { display: inline-block; margin-right: 10px; margin-left: 10px; }
+.menu-items a { text-decoration: none; }
+.show, .hide { display: none; padding-left: 15px; background-color: transparent; background-repeat: no-repeat; background-position: center left; color: #dde1e2; }
 .show { background-image: url(); }
 .hide { background-image: url(); }
+@media only screen and (max-width: 1500px) { .menu {  position: relative; width: 100%; }
+.sitename { position: absolute; top: 0; left: 8px; margin-left: 0px; }
+.menu-items { display: none;  width: 100%; margin-top: 50px; background-color: #3498db; }
+.menu-items li { display: block; text-align: center; }
+.show, .hide { position: absolute; top: 0; right: 8px; }
+.show { display: inline-block; }
+.hide { display: none; }
+#menu:target .show { display: none; }
+#menu:target .hide, #menu:target .menu-items { display: inline-block; } }
+@media only screen and (max-width: 220px) { .sitename, .show, .hide { font-size: 12px; } }
+html{ scroll-behavior: smooth; }
+body{ margin: 0; padding: 0; }
+.gotopbtn{
+position: fixed;
+width: 50px;
+height: 50px;
+background: #3498db;
+bottom: 32px;
+right: 32px;
+text-align: center;
+line-height: 50px;
+color: white;
+font-size: 22px; }</style>
 
-@media only screen and (max-width: 1500px) {
-  .menu { 
-    position: relative;
-    width: 100%; }
-
-  .sitename {
-    position: absolute;
-    top: 0;
-    left: 8px;
-    margin-left: 0px; }
-
-  .menu-items {
-    display: none; 
-    width: 100%;
-    margin-top: 50px;
-    background-color: #a64040; }
-
-  .menu-items li {
-    display: block;
-    text-align: center; }
-  
-  .show, .hide {  
-    position: absolute;
-    top: 0;
-    right: 8px; }
-
-  .show {
-    display: inline-block; }
-
-  .hide {
-    display: none; }
-
-  #menu:target .show {
-    display: none; }
-
-  #menu:target .hide, #menu:target .menu-items {
-    display: inline-block; } }
-
-@media only screen and (max-width: 220px) {
-  .sitename, .show, .hide {
-    font-size: 12px; } }</style>
-
-	<!-- Page Content -->
-	<div class="container">
-		<hr>
-		<!-- Info Section -->
-		<div class="row">
-			<div class="col-xs-12">
+<center><link rel="shortcut icon" href="/Prismesh/p.ico"></head><body id="home">
+<nav class='fixed-nav-bar'><div class='menu' id='menu'>
+<a class='sitename' href='/Prismesh/en'><b>⧩ Prismesh<font size="1"> v0.5.3</font></b></a>
+<b><a class='show' href='#menu'>[ ☰ ]</a><a class='hide' href='#'>[ ☰ ]</a><ul class='menu-items'>
+<li><a href="/Prismesh/en/socials.html#telegram">Telegram</a></li>
+<li><a href="/Prismesh/en/socials.html#discord">Discord</a></li>
+<li><a href="/Prismesh/en/#comments">Comments</a></li>
+<li><a href="/Prismesh/en/topapps.html">Top Apps</a></li>
+<li><a href="/Prismesh/en/improveyrself.html">Improve yrself</a></li>
+<li><a href="/Prismesh/en/updates.html">Updates</a></li>
+<li><a href="https://st1998.github.io/BdS/en/">StegonQotD</a></li>
+<li><a href="/Prismesh/en/#contact">Contact</a></li>
+</ul></div></nav></b><br><br><div class="container"><br><div class="row"><div class="col-xs-12">
 				
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4>Domande & Risposte</h4></div>
-					<div class="panel-body">
-						<p><center>
-					<a href="https://telegra.ph/Privacy-01-20"><b>>️ Vengo aggiunto nei gruppi o chiamato, Proteggermi con password <️</b></a><br><br>
-					<a href="https://telegra.ph/Staff-10-06"><b>> Gestori, Diventa admin, Contatta <</b></a><br><br>
-					<a href="https://telegra.ph/Perch%C3%A8-le-bestemmie-sono-vietate-01-20"><b>> Perchè le bestemmie son vietate? <</b></a><br><br>
-					<a href="https://telegra.ph/7--Perch%C3%A8-non-accettate-persiani-e-arabi-01-20"><b>>️ Perchè non volete persiani/arabi? <️</b></a><br><br>
-					<a href="https://telegra.ph/Privacy4-01-04"><b>>️ Liberare spazio su Telegram? <️</b></a>
-				
-					<br><br><b>( 1 )</b> Di cosa tratta il gruppo?<br><br>
-					<b>Prismando e derivati</b> fonda le radici nella discussione d'argomenti di vari settori (es. giornalismo), riunisce ogni tipo di persona per discutere con altre, dove esige in primis rispetto e comprensione. Ed è così dal 2016, quando era in un'altra forma e ancora acerbo, migliorando col tempo. Ogni gruppo Telegram è un ONLUS, portato avanti con passione senza lucro.<br><br>
-						
-					<b>( 2 )</b> Che significa SFW e NSFW?<br><br>
-					<b>SFW</b> (Safe for Work) indica materiale sicuro e/o che esso inappropriato verrà censurato. <a href="https://it.wikipedia.org/wiki/NSFW"><b>NSFW</b></a> (Not SFW), indica materiale sessualmente esplicito, volgare o offensivo, imbarazzando l'utente. Analogo a VM18.<br><br>
-						
-					<b>( 3 )</b> Collaborate con altri gruppi?<br><br>
-					Non collaboriamo spesso, essendo un gruppo indipendente, ma se ci capita qualche richiesta, prima notiamo gli aspetti che ci interessa maggiormente.<br><br>
-						
-					<b>( 4 )</b> Come gruppo, è pacifico?<br><br>
-					Non ci piace sparlare altri gruppi, cerchiamo di tutelare nostri utenti, tutelarle da gente malintenzionata, far sì che gli utenti stiano bene e siano rispettati.<br><br>
-						
-					<b>( 5 )</b> Perché non è presente su WhatsApp?<br><br>
-					WhatsApp ha molte limitazioni di Telegram e mostra in chiaro il num. di telefono come nome utente.<br><br>
-						
-					<b>( 6 )</b> Perché il nome Prismando?<br><br>
-					Il prisma da' l'idea di collegamento, che è anche sinonimo di comunità, con tanto di -ando come suffisso derivativo presente.<br><br>
-						
-					<b>( 7 )</b> Età media?<br><br>
-					L'età media è varia, Prismando è adatto a tutte l'età.<br><br>
-						
-					<b>( 8 )</b> Perchè alcuni utenti sono offline?<br><br>
-					Per diversi motivi:<br>
-					* Qualcuno potrebbe perdere interesse dopo essere stato su Prismando;<br>
-					* Non usano Telegram per molto tempo;<br>
-					* Sono sommersi da molti gruppi o canali, di conseguenza non trovano più Prismando.<br><br>
-						
-					<b>( 9 )</b> Accettate le critiche?<br><br>
-					Sì, son utili per capire al meglio il feedback dell'utenza, ma che siano costruttive, non per denigrare.</center></p></div></div></div></div>							
+<div class="panel panel-default"><div class="panel-heading">
+Domande & Risposte</div><div class="panel-body">
+<a href="#1"><font size="5"><b>>️ Impara ad usare Telegram! <️</b></font></a><br><br>
+<a href="#2"><font size="5"><b>>️ Perchè non volete persiani/arabi? <️</b></font></a><br><br>			
+<b>( 1 ) Di cosa tratta il gruppo?</b><br>
+<b>Prismando e derivati</b> fonda le radici nella discussione d'argomenti di vari settori (es. giornalismo), riunisce ogni tipo di persona per discutere con altre, dove esige in primis rispetto e comprensione. Ed è così dal 2016, quando era in un'altra forma e ancora acerbo, migliorando col tempo. Ogni gruppo Telegram è un ONLUS, portato avanti con passione senza lucro.<br><br>		
+<b>( 2 ) Che significa SFW e NSFW?</b><br>
+<b>SFW</b> (Safe for Work) indica materiale sicuro e/o che esso inappropriato verrà censurato. <a href="https://it.wikipedia.org/wiki/NSFW"><b>NSFW</b></a> (Not SFW), indica materiale sessualmente esplicito, volgare o offensivo, imbarazzando l'utente. Analogo a VM18.<br><br>			
+<b>( 3 ) Collaborate con altri gruppi?</b><br>
+Non collaboriamo spesso, essendo un gruppo indipendente, ma se ci capita qualche richiesta, prima notiamo gli aspetti che ci interessa maggiormente.<br><br>					
+<b>( 4 ) Come gruppo, è pacifico?</b><br>
+Non ci piace sparlare altri gruppi, cerchiamo di tutelare nostri utenti, tutelarle da gente malintenzionata, far sì che gli utenti stiano bene e siano rispettati.<br><br>				
+<b>( 5 ) Perché non è presente su WhatsApp?</b><br>
+WhatsApp ha molte limitazioni di Telegram e mostra in chiaro il num. di telefono come nome utente.<br><br>
+<b>( 6 ) Perché il nome Prismando?</b><br>
+Il prisma da' l'idea di collegamento, che è anche sinonimo di comunità, con tanto di -ando come suffisso derivativo presente.<br><br>
+<b>( 7 ) Età media?</b><br>
+L'età media è varia, Prismando è adatto a tutte l'età.<br><br>	
+<b>( 8 ) Perchè alcuni utenti sono offline?</b><br>
+Per diversi motivi:<br>
+* Qualcuno potrebbe perdere interesse dopo essere stato su Prismando;<br>
+* Non usano Telegram per molto tempo;<br>
+* Sono sommersi da molti gruppi o canali, di conseguenza non trovano più Prismando.<br><br>
+<b>( 9 ) Accettate le critiche?</b><br>
+Sì, son utili per capire al meglio il feedback dell'utenza, ma che siano costruttive, non per denigrare.</div></div>
 
-		<hr></div>
-	
-	<!-- Footer -->
-	<div class="footer-red">
-		<div class="container">
-			<div class="row footer-in">
-				<div class="col-lg-12">
-					<center><p><b>From the creator of <a href="https://stegon.blogspot.it" target="_blank">Stegon's Ownpage</a> | 2019 | <a href="https://github.com/ST1998/Prismesh">GitHub</a> | <a href="https://i.imgur.com/3uSEw9G.png">1st Year of Prismando</a> | <a href="https://st1998.github.io/Prismesh/it/">🇮🇹 ITALIANO</a> | <a href="/Prismesh/en/updates.html#changelogs">Changelogs</a></b></p></center></div></div></div></div>
-					
-	<!-- jQuery and Bootstrap Core JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
-	
-</body></html>
+<p id="1"><p id="addgroups"><div class="panel panel-default"><div class="panel-heading">Perchè vengo aggiunto nei gruppi?</div><div class="panel-body">
+<img style='height: 100%; width: 100%; object-fit: contain' src="https://telegra.ph/file/c5b82954bc43ef4989633.png" /><br><br><b>☰ ➡️ Impostazioni ➡️ Privacy e Sicurezza ➡️ Gruppi ➡️ I miei contatti</b></div></div>
+<p id="call"><div class="panel panel-default"><div class="panel-heading">Perchè vengo chiamato?</div><div class="panel-body">
+<img style='height: 100%; width: 100%; object-fit: contain' src="https://telegra.ph/file/e44cc57f0bf1683d39c05.png" /><br><br><b>☰ ➡️ Impostazioni ➡️ Privacy e Sicurezza ➡️ Chiamate ➡️ I miei contatti o Nessuno</b></div></div>	
+<p id="password"><div class="panel panel-default"><div class="panel-heading">Come proteggermi con password?</div><div class="panel-body">
+<img style='height: 100%; width: 100%; object-fit: contain' src="https://telegra.ph/file/9fd7908dd0b55f620193f.jpg" /><br><br><b>☰ ➡️ Impostazioni ➡️ Privacy e Sicurezza ➡️ Verifica in due passaggi<br><br>E' consigliato a "tutti" d'esser protetti con una passphrase (password forzuta), da 15 a 40 (o più) caratteri, includendo maiuscole e minuscole,</b> mettendo più in difficoltà il malintenzionato.</div></div>	
+<p id="avatar"><div class="panel panel-default"><div class="panel-heading">Mettere una foto profilo nel proprio account</div><div class="panel-body">
+<img style='height: 100%; width: 100%; object-fit: contain' src="https://telegra.ph/file/f805996fcdca940cffdc7.jpg" /><br><br><b>☰ ➡️ Impostazioni ➡️ 📷 ➡️ Scatta foto, Carica dalla galleria o Ricerca web</b></div></div>
+<p id="username"><div class="panel panel-default"><div class="panel-heading">Impostare un username</div><div class="panel-body">
+<img style='height: 100%; width: 100%; object-fit: contain' src="https://telegra.ph/file/cf427f65c6c08b5d5c315.jpg" /><br><br><b>☰ ➡️ Impostazioni ➡️ Nessuno ➡️ Il tuo username ➡️ ✅</b></div></div>
+<p id="freespace"><div class="panel panel-default"><div class="panel-heading">Come liberare spazio su Telegram?</div><div class="panel-body">
+<b>☰ ➡️ Impostazioni ➡️ Dati e archivio ➡️ Utilizzo archivio ➡️ Vuota la cache e/o Database locale</b><br><br>Su <b>Dati e archivio</b>, è possibile disabilitare <b>Download automatico</b>, per fare in modo che non vengano scaricati file (come immagini, video e audio) da Telegram automaticamente.<br><br><img style='height: 100%; width: 100%; object-fit: contain' src="https://telegra.ph/file/b8a874fe56620f88d4706.jpg" /><br><br>La <b>cache</b> accumulata proviene tutta da qui (<b>sopra</b>). Ossia nella vostra memoria interna con la cartella denominata <b>Telegram</b>. <b>Ocio!</b> Svuotando la cache su Telegram equivale a svuotare tutto il contenuto della cartella Telegram con tutte le sotto-cartelle.<br><br>Per il resto, se i vostri contenuti (come file e simili) sono stati salvati e conservati nel vostro account Telegram, quelli non verranno cancellati, dato che sono salvati in cloud, quindi li potrete riscaricare di nuovo quando e dove volete.</div></div>
 
+<p id="2"><div class="panel panel-default"><div class="panel-heading">Perchè non accettate persiani e arabi?</div><div class="panel-body">
+<p>Faccio ricordare che noi non siamo contro gli arabi, persiani e simili, bensì quel che fanno.<br><br><b>( 1 ) Oltre al loro continuo silenzio, può capitare che possano condividere a caso dei file APK piuttosto strani e sconosciuti con scritte persiane o arabe.</b><br><br><img style='height: 100%; width: 100%; object-fit: contain' src="https://telegra.ph/file/38b6d5889f0e3a3a2a0e6.jpg" />
+<br><br><b>( 2 ) Oltre alla descrizione scritta completamente in persiano o arabo (con tanti di emoji), possono usare anche una foto presa a caso su Internet, quindi che non rispecchia la loro vera identità e lo si può capire anche facilmente dalla bassa qualità dell'immagine, tipicamente in JPEG.</b><br><br><img style='height: 100%; width: 100%; object-fit: contain' src="https://telegra.ph/file/f7b7cbb0a1f35a5a70e0d.jpg" />
+<br><br><b>( 3 ) Il nome scritto tutto in minuscolo e in modo strano, che fa ricadere molto al persiano o simile, senza l'immagine nel profilo e ancora una volta la descrizione in persiano, arabo o simile.</b><br><br><img style='height: 100%; width: 100%; object-fit: contain' src="https://telegra.ph/file/427df512a333a69af2018.jpg" />
+<br><br><b>( 4 ) Combo!</b><br><br><img style='height: 100%; width: 100%; object-fit: contain' src="https://telegra.ph/file/38b6d5889f0e3a3a2a0e6.jpg" /><br><br><img style='height: 100%; width: 100%; object-fit: contain' src="https://telegra.ph/file/6ccf2b430d3553122a4e8.jpg" /><br><br><img style='height: 100%; width: 100%; object-fit: contain' src="https://telegra.ph/file/8f301f4c5b788b3ce3480.jpg" /></p></div></div></div></div></div>
+	
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"><a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+	
+<div class="footer-red"><div class="container"><div class="row footer-in"><b>From creator of <a href="https://stegon.blogspot.com" target="_blank">Stegon's Ownpage</a> | 2019-2020 | <a href="https://i.imgur.com/3uSEw9G.png">1st year of Prismando</a> | <a href="https://st1998.github.io/Prismesh/it/">🇮🇹 ITA</a><br><br><a href="https://www.paypal.me/Steveno98">> DONATE <</a></b></center></div></div></div></body></html>

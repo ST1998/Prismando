@@ -1,440 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="Prismando Mesh">
-	<meta name="keywords" content="telegram, discord, chat, italian, english" />
-
-	<title>Prismesh - Updates</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-
-	<style>
-html,
-body {
-	height: 100%;
-	font-family: Verdana, Geneva, sans-serif; }
-
-body {
-	padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-	background-image: url('img/watermark.png');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center; }
-
-a, a:active, a:focus {
-	outline: none; }
-
-.page-header {
-	color: #A94442; }
-
-a {
-	color: #A94442; }
-
-a:hover, a:active {
-	color: #401A1A; }
-
-a:hover, a:visited, a:link, a:active {
-	text-decoration: none; }
-
-hr {
-	visibility: hidden; }
-
-/* Home Page Carousel */
-
-header.carousel {
-	height: 30vw;
-	min-height: 50%; }
-
-header.carousel .item,
-header.carousel .item.active,
-header.carousel .carousel-inner {
-	height: 100%; }
-
-header.carousel .fill {
-	width: 100%;
-	height: 100%;
-	background-position: center;
-	background-size: cover;
-	image-rendering: pixelated; }
-
-/* Panel Styles */
-
-.panel {
-	background:rgba(255,255,255,0); }
-
-.panel-default > .panel-heading {
-	background:rgba(136,0,0,0.75);
-	color: #ffffff; }
-
-.panel-default > .panel-body {
-	background:rgba(255,255,255,0.75); }
-
-.modal-header {
-	background: #880000;
-	color: #ffffff; }
-
-.modal-header > .close {
-	color: #ffffff;
-	opacity: 1; }
-
-/* Header Styles */
-
-.navbar-default {
-	background-color: #880000;
-	border-color: #660000; }
-
-.navbar-default .navbar-brand {
-	color: #ffffff; }
-
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-	color: #ee0000; }
-
-.navbar-default .navbar-text {
-	color: #ffffff; }
-
-.navbar-default .navbar-nav > li > a {
-	color: #ffffff; }
-
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-	color: #ee0000; }
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #ee0000;
-	background-color: #660000; }
-
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-	color: #ee0000;
-	background-color: #660000; }
-
-.navbar-default .navbar-toggle {
-	border-color: #660000; }
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #660000; }
-
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: #ffffff; }
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-	border-color: #ffffff; }
-
-.navbar-default .navbar-link {
-	color: #ffffff; }
-
-.navbar-default .navbar-link:hover {
-	color: #ee0000; }
-
-@media (max-width: 767px) {
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-		color: #ffffff; }
-		
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-		color: #ee0000; }
-		
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-		color: #ee0000;
-		background-color: #660000; } }
-
-/* Footer Styles */
-
-.footer-in {
-	margin: 15px 0;
-	color: #ffffff; }
-
-.footer-in a {
-	color: #ffffff; }
-
-.footer-in a:hover {
-	color: #ee0000; }
-
-.footer-red {
-	background-color: #880000; }
-
-/* Button Styles */
-
-.btn-green {
-	color: white !important;
-	background: #7CBB00;
-	border-color: #7CBB00; }
-
-.btn-green:hover {
-	color: white !important;
-	background: #6ba200;
-	border-color: #6ba200; }
-
-.btn-yellow {
-	color: white !important;
-	background: #FFBB00;
-	border-color: #FFBB00; }
-
-.btn-yellow:hover {
-	color: white !important;
-	background: #e6a800;
-	border-color: #e6a800; }
-
-.btn-red {
-	color: white !important;
-	background: #F65314;
-	border-color: #F65314; }
-
-.btn-red:hover {
-	color: white !important;
-	background: #e84709;
-	border-color: #e84709; }
-
-.btn-blue {
-	color: white !important;
-	background: #00A1F1;
-	border-color: #00A1F1; }
-
-.btn-blue:hover {
-	color: white !important;
-	background: #0090d8;
-	border-color: #0090d8; }
-
-.btn-prismando {
-	color: white !important;
-	background: #880000;
-	border-color: #880000; }
-
-.btn-prismando:hover {
-	color: white !important;
-	background: #6f0000;
-	border-color: #6f0000; }
-
-/* Random Stuff */
-
-.alphabox {
-	background:rgba(0,0,0,0.2); }
-
-.invisiwidth {
-	width: 100%; }
-
-.img-fill {
-	width: 100%; }
-
-.hovertext:after {
-	content:attr(name);
-	position:absolute;
-	white-space: nowrap;
-	top:30px;
-	padding:0.5em 20px;
-	font-weight: bold;
-	background:rgba(136,0,0,0.5);
-	text-decoration:none;
-	color:#fff; }
-
-.hovertext-random:after {
-	font-size: 70%;
-	content:attr(name);
-	position:absolute;
-	white-space: nowrap;
-	top:30px;
-	padding:0.5em 10px;
-	font-weight: bold;
-	background:rgba(136,0,0,0.5);
-	text-decoration:none;
-	color:#fff; }
-
-/* Responsive Styles */
-
-@media(max-width:991px) {
-	.customer-img,
-	.img-related {
-		margin-bottom: 30px; } }
-
-@media(max-width:767px) {
-	.img-portfolio {
-		margin-bottom: 15px; }
-
-	header.carousel .carousel {
-		height: 70%; } }
-	</style>
-
-<link rel="shortcut icon" href="/Prismesh/favicon16.ico">
-
-</head><body id="home">
-
-	<!-- Navigation -->
-	<nav class='fixed-nav-bar'><div class='menu' id='menu'>
-		<a class='sitename' href='/Prismesh/en'><b>⧩ Prismesh<font size="1"> v0.3.6</font></b></a>
-
-		<b><a class='show' href='#menu'>[ ☰ ]</a><a class='hide' href='#'>[ ☰ ]</a>
-			<ul class='menu-items'>
-				<li><a href="/Prismesh/en/socials.html#telegram">Telegram</a></li>
-				<li><a href="/Prismesh/en/socials.html#discord">Discord</a></li>
-				<li><a href="/Prismesh/en/#comments">Comments</a></li>
-				<li><a href="/Prismesh/en/topapps.html">Top Apps</a></li>
-				<li><a href="/Prismesh/en/improveyrself.html">Improve yrself</a></li>
-				<li><a href="/Prismesh/en/faq.html">FAQ</a></li>
-				<li><a href="/Prismesh/en/contact.html">Contact</a></li>
-				<li><a href="https://www.paypal.me/Steveno98">Donate</a></li>
-			</ul></div></nav></b>
-
-<style>
-.fixed-nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  width: 100%;
-  height: 50px;
-  background-color: #6f0000; }
-
-ul {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; }
-
-li {
-  float: left; }
-
-.content {
-  margin-top: 20px; }
-
-.fixed-nav-bar li, .fixed-nav-bar a { 
-  height: 50px;
-  line-height: 50px; }
-
-.menu {
-  width: 100%;
-  max-width: 1500px; }
-
-.menu a, .menu a:visited {
-  color: #ffffff; }
-
-.menu a:hover, .menu a:target {
-  color: #ebebeb; }
-
-.menu-items {
-  display: inline-block; }
-
-.sitename {
-  display: inline-block;
-  margin-right: 20px;
-  margin-left: 10px; }
-
-.menu-items li {
-  display: inline-block;
-  margin-right: 10px;
-  margin-left: 10px; }
-
-.menu-items a {
-  text-decoration: none; }
-
-.show, .hide {
-  display: none;
-  padding-left: 15px;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center left;
-  color: #dde1e2; }
-
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><meta name="author" content="Prismando Mesh"><meta name="keywords" content="telegram, discord, chat, italian, english" /><title>Updates</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+
+<style>html, body { height: 100%; font-family: Times, Verdana, Geneva, sans-serif; }
+a, a:active, a:focus { outline: none; }
+.page-header { color: #3498db; }
+a { color: #3498db; }
+a:hover, a:active { color: #34495e; }
+a:hover, a:visited, a:link, a:active { text-decoration: none; }
+.panel { background:rgba(255,255,255,0); }
+.panel-default > .panel-heading { background: #2980b9; color: #ffffff; }
+.panel-default > .panel-body { background:rgba(255,255,255,0.75); }
+.modal-header { background: #880000; color: #ffffff; }
+.modal-header > .close { color: #ffffff; opacity: 1; }
+.footer-in { margin: 10px 0; color: #ffffff; }
+.footer-in a { color: #ffffff; }
+.footer-in a:hover { color: #ee0000; }
+.footer-red { background-color: #2980b9; }
+.footer { position: fixed; left: 0; bottom: 0; width: 100%; background-color: #3498db; }
+.footer2 { position: fixed; left: 0; bottom: 100; width: 100%; background-color: #3498db; }
+html{ scroll-behavior: smooth; }
+.fixed-nav-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; width: 100%; height: 50px; background-color: #2980b9; }
+ul { position: -webkit-sticky; position: sticky; top: 0; list-style-type: none; margin: 0; padding: 0; overflow: hidden; }
+li { float: left; }
+.content { margin-top: 20px; }
+.fixed-nav-bar li, .fixed-nav-bar a { height: 50px; line-height: 50px; }
+.menu { width: 100%; max-width: 1500px; }
+.menu a, .menu a:visited { color: #ffffff; }
+.menu a:hover, .menu a:target { color: #ebebeb; }
+.menu-items { display: inline-block; }
+.sitename { display: inline-block; margin-right: 20px; margin-left: 10px; }
+.menu-items li { display: inline-block; margin-right: 10px; margin-left: 10px; }
+.menu-items a { text-decoration: none; }
+.show, .hide { display: none; padding-left: 15px; background-color: transparent; background-repeat: no-repeat; background-position: center left; color: #dde1e2; }
 .show { background-image: url(); }
 .hide { background-image: url(); }
+@media only screen and (max-width: 1500px) { .menu {  position: relative; width: 100%; }
+.sitename { position: absolute; top: 0; left: 8px; margin-left: 0px; }
+.menu-items { display: none;  width: 100%; margin-top: 50px; background-color: #3498db; }
+.menu-items li { display: block; text-align: center; }
+.show, .hide { position: absolute; top: 0; right: 8px; }
+.show { display: inline-block; }
+.hide { display: none; }
+#menu:target .show { display: none; }
+#menu:target .hide, #menu:target .menu-items { display: inline-block; } }
+@media only screen and (max-width: 220px) { .sitename, .show, .hide { font-size: 12px; } }
+html{ scroll-behavior: smooth; }
+body{ margin: 0; padding: 0; }
+.gotopbtn{
+position: fixed;
+width: 50px;
+height: 50px;
+background: #3498db;
+bottom: 32px;
+right: 32px;
+text-align: center;
+line-height: 50px;
+color: white;
+font-size: 22px; }</style>
 
-@media only screen and (max-width: 1500px) {
-  .menu { 
-    position: relative;
-    width: 100%; }
-
-  .sitename {
-    position: absolute;
-    top: 0;
-    left: 8px;
-    margin-left: 0px; }
-
-  .menu-items {
-    display: none; 
-    width: 100%;
-    margin-top: 50px;
-    background-color: #a64040; }
-
-  .menu-items li {
-    display: block;
-    text-align: center; }
-  
-  .show, .hide {  
-    position: absolute;
-    top: 0;
-    right: 8px; }
-
-  .show {
-    display: inline-block; }
-
-  .hide {
-    display: none; }
-
-  #menu:target .show {
-    display: none; }
-
-  #menu:target .hide, #menu:target .menu-items {
-    display: inline-block; } }
-
-@media only screen and (max-width: 220px) {
-  .sitename, .show, .hide {
-    font-size: 12px; } }</style>
-
-	<!-- Page Content -->
-	<div class="container">
-		<!-- Info Section -->
-		<div class="row">
-			<div class="col-xs-12">
+<center><link rel="shortcut icon" href="/Prismesh/p.ico"></head><body id="home">
+<nav class='fixed-nav-bar'><div class='menu' id='menu'>
+<a class='sitename' href='/Prismesh/en'><b>⧩ Prismesh<font size="1"> v0.5.3</font></b></a>
+<b><a class='show' href='#menu'>[ ☰ ]</a><a class='hide' href='#'>[ ☰ ]</a><ul class='menu-items'>
+<li><a href="/Prismesh/en/socials.html#telegram">Telegram</a></li>
+<li><a href="/Prismesh/en/socials.html#discord">Discord</a></li>
+<li><a href="/Prismesh/en/#comments">Comments</a></li>
+<li><a href="/Prismesh/en/topapps.html">Top Apps</a></li>
+<li><a href="/Prismesh/en/improveyrself.html">Improve yrself</a></li>
+<li><a href="/Prismesh/en/faq.html">FAQs</a></li>
+<li><a href="https://st1998.github.io/BdS/en/">StegonQotD</a></li>
+<li><a href="/Prismesh/en/#contact">Contact</a></li>
+</ul></div></nav></b><br><br><div class="container"><br><div class="row"><div class="col-xs-12">
 	
-				<hr id="changelogs">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4>v0.3.6 | 10 Luglio | 23:41</h4></div>
-					<div class="panel-body">
-						<p><center>* Ristrutturazione dell'intera pagina Social, con tanto di sotto-pagine.<br><br><a href="/Prismesh/it/old_changelogs.html"><b>-> Premi per vedere le changelog precedenti <-</b></a></center></p></div></div></div></div>
+<div class="panel panel-default"><div class="panel-heading">v0.5.3 | Jan. 20, '20</div><div class="panel-body">
+* The English version of Prismesh has been updated, but partially translated.<br>
+* The welcome message on the Home page has been changed<br><br><a href="#changelogs"><font size="5"><b>> Previous changelogs <</b></font></a></div></div>
 
-				<hr id="news">		
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4><i class="fa fa-info-circle"></i> 1 Luglio - 13:14</h4></div>
-					<div class="panel-body">
-						<p><center><img style='height: 100%; width: 100%; object-fit: contain' src="/Prismesh/files/updates/img3.jpg" /><br><br>È stato aperto da poco il sito ufficiale su Prismando. Per chi è interessato, può visitare e vedere come sembra, lasciando anche un commento.</center></p></div></div>		
+<p id="news"><div class="panel panel-default"><div class="panel-heading">???-Jan. 19, '20</div><div class="panel-body">
+<img style='height: 100%; width: 100%; object-fit: contain' src="https://i.imgur.com/9UKINtA.jpg" /></div></div>
+<div class="panel panel-default"><div class="panel-heading">Jul. 22, '19 </div><div class="panel-body">
+<img style='height: 100%; width: 100%; object-fit: contain' src="https://i.imgur.com/Q3SEPK9.jpg" /></div></div>	
+<div class="panel panel-default"><div class="panel-heading">Jul. 20, '19</div><div class="panel-body">
+<img style='height: 100%; width: 100%; object-fit: contain' src="https://i.imgur.com/KhbPmRp.jpg" /><br><br>E' stato introdotto un network di Prismando, chiamato Prismatrix, dove oltre ad essere presenti i gruppi Prismando (ufficiali), sono presenti anche i gruppi di terzi parti, quest'ultimi che non fanno parte tra i gruppi Prismando. Il canale che, precedentemente, si chiamava Prismando Complete, ora è stato cambiato in Prismatrix.</div></div>
+<div class="panel panel-default"><div class="panel-heading">Jul. 1, '19</div><div class="panel-body">
+<img style='height: 100%; width: 100%; object-fit: contain' src="/Prismesh/files/updates/img3.jpg" /><br><br>È stato aperto da poco il sito ufficiale su Prismando. Per chi è interessato, può visitare e vedere come sembra, lasciando anche un commento.</div></div>			
+<div class="panel panel-default"><div class="panel-heading">Jun. 13, '19</div><div class="panel-body">
+<b>>️ t.me/PrismComplete (link non più valido) <</b><br><br>Canale dove vengono riuniti tutti i gruppi Prismando e derivati in un unico canale.</div></div>
+<div class="panel panel-default"><div class="panel-heading">Jun. 6, '19</div><div class="panel-body">
+<img style='height: 100%; width: 100%; object-fit: contain' src="/Prismesh/files/updates/img2.jpg" /><br><br>La sezione <b>Gruppi (e Più info)</b> è stata eliminata in favore dell'integrazione totale per entrare in altri gruppi <b>(Prisming, Prismludo e PrismNSFW)</b> direttamente nei canali d'entrata, con anche l'integrazione di Discord!</div></div>
+<div class="panel panel-default"><div class="panel-heading">Jun. 3, '19</div><div class="panel-body">
+<img style='height: 100%; width: 100%; object-fit: contain' src="/Prismesh/files/updates/img1.jpg" /><br><br>In questo file ZIP (da scaricare ed estrarre), ci sono tutte le vecchie notizie di Prismnotizie. È consigliato usare <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox"><b>Firefox</b></a> o <a href="https://play.google.com/store/apps/details?id=mark.via.gp"><b>Via Browser</b></a> per una miglior visualizzazione, mentre per trovare il file scaricato, usa <a href="https://play.google.com/store/apps/details?id=com.alphainventor.filemanager"><b>File Manager +</b></a> e si trova in <b>Memoria Interna/Telegram/Telegram Documents</b> e se trovi un file ZIP, è quello lì e lo puoi estrarre direttamente dal File Manager, per poi vedere tutto il contenuto aprendo il file messages.html<br><br><a href="https://www.dropbox.com/s/4zesqimclhk7m7h/Prismnotizie_%28VECCHIO%29.zip?dl=0"><b>-> Premi qui per scaricarlo <-</b></a></div></div>
 				
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4><i class="fas fa-newspaper"></i> 13 Giugno - 21:21</h4></div>
-					<div class="panel-body">
-						<p><center><a href="https://t.me/PrismComplete"><b>➡️ t.me/PrismComplete ⬅</b></a><br><br>Canale dove vengono riuniti tutti i gruppi Prismando e derivati in un unico canale.</center></p></div></div>
-				
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4><i class="fa fa-info-circle"></i> 6 Giugno - 11:36</h4></div>
-					<div class="panel-body">
-						<p><center><img style='height: 100%; width: 100%; object-fit: contain' src="/Prismesh/files/updates/img2.jpg" /><br><br>La sezione <b>Gruppi (e Più info)</b> è stata eliminata in favore dell'integrazione totale per entrare in altri gruppi <b>(Prisming, Prismludo e PrismNSFW)</b> direttamente nei canali d'entrata, con anche l'integrazione di Discord!</center></p></div></div>
-						
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4><i class="fa fa-info-circle"></i> 3 Giugno - 21:03</h4></div>
-					<div class="panel-body">
-						<p><center><img style='height: 100%; width: 100%; object-fit: contain' src="/Prismesh/files/updates/img1.jpg" /><br><br>In questo file ZIP (da scaricare ed estrarre), ci sono tutte le vecchie notizie di Prismnotizie. È consigliato usare <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox"><b>Firefox</b></a> o <a href="https://play.google.com/store/apps/details?id=mark.via.gp"><b>Via Browser</b></a> per una miglior visualizzazione, mentre per trovare il file scaricato, usa <a href="https://play.google.com/store/apps/details?id=com.alphainventor.filemanager"><b>File Manager +</b></a> e si trova in <b>Memoria Interna/Telegram/Telegram Documents</b> e se trovi un file ZIP, è quello lì e lo puoi estrarre direttamente dal File Manager, per poi vedere tutto il contenuto aprendo il file messages.html<br><br><a href="https://www.dropbox.com/s/4zesqimclhk7m7h/Prismnotizie_%28VECCHIO%29.zip?dl=0"><b>-> Premi qui per scaricarlo <-</b></a></center></p></div></div>			
-						
-						
-		<hr></div>
-	
-	<!-- Footer -->
-	<div class="footer-red">
-		<div class="container">
-			<div class="row footer-in">
-				<div class="col-lg-12">
-					<center><p><b>From the creator of <a href="https://stegon.blogspot.it" target="_blank">Stegon's Ownpage</a> | 2019 | <a href="https://github.com/ST1998/Prismesh">GitHub</a> | <a href="https://i.imgur.com/3uSEw9G.png">1st Year of Prismando</a> | <a href="https://st1998.github.io/Prismesh/it/">🇮🇹 ITALIANO</a> | <a href="/Prismesh/en/updates.html#changelogs">Changelogs</a></b></p></center></div></div></div></div>
+<p id="changelogs"><div class="panel panel-default"><div class="panel-heading">Vecchi changelog</div><div class="panel-body">
+<b>v0.5.2 | Jan. 20, '20</b><br>
+* Le sotto-pagine della pagina di FAQ sono state unificate in quest'ultima<br>
+* E' stato ancora migliorato il codice, garantendo più stabilità e leggerezza<br>
+* La pagina Contatta e Home sono state unificate<br><br>
+<b>v0.5.1 | Jan. 19, '20</b><br>
+* Aggiunta una nuova opzione nella barra di navigazione (in alto) con il nome di BdStegon<br>
+* E' stato ancora migliorato il codice, garantendo più stabilità e leggerezza<br>
+* Sono state tolte le ore e i minuti nella data di aggiornamento della pagina Novità, visto che son risultate piuttosto superflue<br><br>
+<b>v0.5.0 | Jan. 19, '20</b><br>
+* Ristrutturato parzialmente il sito web, con ancora qualche erroruccio e mancanza<br>
+* E' stato migliorato il codice sorgente, garantendo più stabilità e leggerezza nella navigazione<br>
+* Le pagine separate dei gruppi Prismando sono state riunite in una sola<br>
+* A causa dell'insuccesso del progetto dei gruppi di Terze parti, la sua pagina web non esiste più<br><br>
+<b>v0.4.3 | Jul. 24, '19</b><br>
+* Introdotto il pulsante (sotto a destra con la freccia rivolta verso l'alto) per tornare automaticamente all'estrema cima della pagina<br><br>
+<b>v0.4.2 | Jul. 23, '19</b><br>
+* Piccola revisione e gran allegerimento nel codice<br>* Cambiato il colore del sito da rosso ad azzurro<br>* Cambiato il nome da Contatti a Contatta<br>* Tolta la scritta Prismesh ad ogni pagina visitata<br><br>
+<b>v0.4.0 | Jul. 20, '19</b><br>
+* Introduzione della pagina Gruppi di terze parti, dove sono presenti gruppi che non fanno parte tra i gruppi Prismando ma che fanno parte nel network Prismatrix. Quest'ultimo lo si può trovare nella sezione Telegram nel menu navigazione in alto<br>* Ristrutturazione dell'intera pagina FAQ, con tanto di introduzione di sotto-pagine Impara ad usare Telegram! e Perchè non volete persiani/arabi<br>* Aggiunta una piccola descrizione nella pagina Contatti per quanto riguarda il come far parte del network Prismatrix<br>* Qualche ritoccata ad alcune pagine del sito web.<br>* Riscritto il messaggio di benvenuto nella home-page<br>* Tolta l'opzione Commenti dal menu navigazione, soltanto nella home-page<br>* Tolto Changelog dal footer, essendo superfluo, vista la già presenza dell'opzione Novità nel menu navigazione<br>* Tolta l'opzione Dona dal menu navigazione e spostata nella sezione footer (più in basso possibile), così se uno vuole donare, significa che è realmente interessato<br>* Leggera ed ottimizzazione nel codice sorgente.<br>* Risolto parzialmente il problema del re-direct dalla pagina 404 - NOT FOUND<br><br>
+<b>v0.3.6 | Jul. 10, '19</b><br>
+* Ristrutturazione dell'intera pagina Social, con tanto di sotto-pagine<br><br>
+<b>v0.3.5 | Jul. 8, '19</b><br>
+* Integrazione della pagina Telegram e Discord nella pagina Social<br>* E' stata creata una pagina a parte per riunire tutte le precedenti changelog<br><br>
+<b>v0.3.4 | Jul. 8, '19</b><br>
+* La pagina Notizie e Changelog sono state unificate in Novità<br><br>
+<b>v0.3.3 | Jul. 7, '19</b><br>
+* Introdotta la pagina Discord, con tanto di widget (in basso a destra) che permette di poter chattare senza per forza registrarsi su Discord<br>* Nella pagina home, apparirà ben in chiaro l'ultimo aggiornamento effettuato<br><br>
+<b>v0.3.1 | Jul. 5, '19</b><br>
+* Tolte le opzioni Changelog (spostato su footer) e Stegon dal menu navigatore (in alto)<br>* La sezione footer è stato aggiornato<br><br>
+<b>v0.3.0 | Jul. 5, '19</b><br>
+* Introdotta la versione in Inglese di Prismesh<br><br>
+<b>v0.2.5 | Jul. 5, '19</b><br>
+* Menu di navigazione aggiornato, con in aggiunta un triangolo accanto al titolo e nuove opzioni Top App, Migliora te stesso e Contatti<br>* Footer aggiornato, con in aggiunta il link dell'immagine del primo anniversario di Prismando<br><br>
+<b>v0.2.0 | Jul. 2, '19</b><br>
+* Cambiata la favicon, con una da 16x16<br>* Introduzione della pagina riguardante l'errore 404<br>* Introduzione ed integrazione delle pagine dedicate alle entrata nei gruppi Telegram su Prismando e derivati<br>* Introduzione ed integrazione della pagina sulle domande e risposte (FAQ)<br><br>
+<b>v0.1.5 | Jul. 1, '19</b><br>
+* Introduzione della pagina Notizie, dove vengono racchiusi gli aggiornamenti dei gruppi e canali Telegram riguardante Prismando e derivati, la versione Discord e altri. Prima era Prismnotizie, un canale Telegram, ora è diventato una pagina web di Prismesh<br>* Introduzione della pagina Changelog, dove vengono racchiusi tutti gli archivi riguardanti gli aggiornamenti di Prismando Mesh<br>* Aggiunta del numero della versione accanto al titolo del sitoweb in alto a sinistra<br><br>
+<b>v0.1.0 | Jul. 1, '19</b><br>
+* Apertura ufficiale di Prismando Mesh</div></div></div></div></div>
 
-	<!-- jQuery and Bootstrap Core JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
-	
-</body></html>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"><a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+
+<div class="footer-red"><div class="container"><div class="row footer-in"><b>From creator of <a href="https://stegon.blogspot.com" target="_blank">Stegon's Ownpage</a> | 2019-2020 | <a href="https://i.imgur.com/3uSEw9G.png">1st year of Prismando</a> | <a href="https://st1998.github.io/Prismesh/it/">🇮🇹 ITA</a><br><br><a href="https://www.paypal.me/Steveno98">> DONATE <</a></b></center></div></div></div></body></html>
